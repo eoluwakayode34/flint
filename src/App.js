@@ -15,11 +15,17 @@ import box8 from './asset/images/footer-icon-8.svg'
 
 const MotionBox = motion(Box)
 const MotionFlex = motion(Flex)
+const TwinkleStar = motion(Image)
 
 
 function App() {
+
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  }
   return (
-    <Box bg='brand.900' w='100%' h={['100%','100%']}>
+    <Box bg='brand.900' w={['100vw']} h={['100%','100%']}>
       <Flex justifyContent='center' flex='1'>
         <Image src={logo} my={10}  h='2rem'    />
       </Flex>
@@ -30,9 +36,18 @@ function App() {
         <Heading fontSize={["2rem","3rem","4rem"]} textAlign='center' font-weight='700' lineHeight='1' color='white' letterSpacing='1px'>Lifting the veil, <br/>         for everyone
 </Heading>
 
-          <Image src={star} width={['5','8']} pos='absolute' left={['-5','-8']} />
-          <Image src={star} width={['5','8']} pos='absolute' right={['-2','-5']} top='-5' />
-          <Image src={star} width={['5','8']} pos='absolute' right={['2px','2px']} bottom='0' />
+          <TwinkleStar
+          animate={{ rotate: 360, scale: [0, 1, 1.5, 0, 1], opacity:  [1, 0, 1, 1, 0] }}
+          transition={{ ease: "easeOut", duration: 2, yoyo: Infinity }}
+          
+          src={star} width={['5','8']} pos='absolute' left={['-5','-8']} />
+          <TwinkleStar
+          animate={{ rotate: 360, scale: [1, 0, 1, 1.5, 0], opacity:  [0, 1, 0, 1, 1] }}
+          transition={{ ease: "easeOut", duration: 2, yoyo: Infinity }}
+          src={star} width={['5','8']} pos='absolute' right={['-2','-5']} top='-5' />
+          <TwinkleStar 
+          animate={{ rotate: 360, scale: [0, 1, 0, 1, 1.5], opacity:  [1, 0, 1, 0, 1] }}
+          transition={{ ease: "easeOut", duration: 2, yoyo: Infinity }} src={star} width={['5','8']} pos='absolute' right={['2px','2px']} bottom='0' />
           </Flex>
           
         </Flex>
@@ -91,13 +106,11 @@ function App() {
             justifyContent='center'
             w='100%'
             px='.4rem'
-             drag="x"
-  dragConstraints={{ left: '2rem', right: '2rem' }}
+            
   overflow='hidden'
   
   >
-                <MotionBox drag="x"
-  dragConstraints={{ left: '2rem', right: '2rem' }}  >
+                <MotionBox   >
                   <Image src={box1} />
                 </MotionBox>
                 <MotionBox>
