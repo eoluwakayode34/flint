@@ -59,13 +59,13 @@ function App() {
             color='white'
             >We are taking the power from the employer  and  <Box display={['none','none', 'block']} as='br'/> putting it in your hands.</Text>
 
-            <Flex py='3rem' flex='1' flexDir={['row']}
+            <Flex py='3rem' flex='1' flexDir={['column', 'column','row','row']}
               alignItems={['center']}
               justifyContent='center'
               px={['0','10','0']}
               >
               <Flex mx={['.4rem']}  
-              width={['80%  ','60%  ','60%  ','35%']}
+              width={['90%  ','90%  ','60%  ','35%']}
               //'100%','100%',
               justifyContent='center'
               as='flex'
@@ -73,8 +73,9 @@ function App() {
               >
 
             <Input placeholder="email address"
-                   px={['2rem']}
-                   py={['2.2rem']}
+                     px={['1.8rem','1.9rem','2rem','2rem']}
+                     py={[  '2rem', '2.1rem','2.2rem','2.2rem']}
+                     
                     // 90%', '90%',
                     width={[ '100%']}
                     borderRadius='15px'
@@ -84,12 +85,12 @@ function App() {
         
         />
         </Flex>
-        <Flex mx='.4rem' width={[ '45%', '45%','25%']} my={2}
+        <Flex mx='.4rem' width={[ '90%','90%', '45%','25%']} my={2}
         //'100%', '100%',
         justifyContent='center'>
         <Button bg="primary.900"
-        px={['2rem']}
-        py={['2.2rem']}
+        px={['1.8rem','1.9rem','2rem','2rem']}
+        py={[  '2rem', '2.1rem','2.2rem','2.2rem']}
 
         width={[ '100%']}
         //'90%', '90%',
