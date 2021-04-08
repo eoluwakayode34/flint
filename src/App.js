@@ -20,10 +20,7 @@ const TwinkleStar = motion(Image)
 
 function App() {
 
-  const variants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  }
+ 
   return (
     <Box bg='brand.900' w={['100vw']} h={['100%','100%']}>
       <Flex justifyContent='center' flex='1'>
