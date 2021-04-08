@@ -19,7 +19,7 @@ const MotionFlex = motion(Flex)
 
 function App() {
   return (
-    <Box bg='brand.900' w='100%' h='100%'>
+    <Box bg='brand.900' w='100%' h={['100vh','100vh','100%']}>
       <Flex justifyContent='center' flex='1'>
         <Image src={logo} my={10}  h='2rem'    />
       </Flex>
