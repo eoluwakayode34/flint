@@ -48,12 +48,13 @@
   font-weight: normal;
   src: local('Airbnb Cereal App Black'), url('./asset/fonts/AirbnbCerealBlack.woff') format('woff');
   }
-  
+
 body {
   margin: 0;
   font-family: 'Airbnb Cereal App Book';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: '#0FDBA8';
 }
 
 

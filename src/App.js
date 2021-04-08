@@ -19,7 +19,7 @@ const MotionFlex = motion(Flex)
 
 function App() {
   return (
-    <Box bg='brand.900' w='100%' h={['100vh','100vh','100%']}>
+    <Box bg='brand.900' w='100%' h={['100%','100%']}>
       <Flex justifyContent='center' flex='1'>
         <Image src={logo} my={10}  h='2rem'    />
       </Flex>
@@ -39,7 +39,7 @@ function App() {
             <Text textAlign='center' 
             fontSize={["1rem","1.5rem","2rem"]} 
             padding={["1rem","1.5rem","2rem"]} 
-            px={['0','10','0']}
+            px={['5','10','0']}
 
             letterSpacing='1.2'
               lineHeight ='1.2'
