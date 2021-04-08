@@ -104,8 +104,8 @@ function App() {
             w='100%'
             px='.4rem'
             
-  overflow='hidden'
-  
+            mt={['6rem', "4rem", "1rem"]}
+          bottom={0}
   >
                 <MotionBox   >
                   <Image src={box1} />

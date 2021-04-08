@@ -86,7 +86,12 @@ const theme = extendTheme({ colors
     
     "html, body": {
       fontSize: "sm",
-      backgroundColor: "#0FDBA8"
+      backgroundColor: "#0FDBA8",
+      margin: 0,
+      padding: 0,
+      height: '100%',
+      position: 'relative'
+
     },
    
   },
