@@ -23,8 +23,8 @@ function App() {
  
   return (
     <Box bg='brand.900' w={['100vw']} h={['100%','100%']}>
-      <Flex justifyContent='center' flex='1'>
-        <Image src={logo} my={10}  h='2rem'    />
+      <Flex justifyContent='center' py={10} flex='1'>
+        <Image src={logo}  margin={0}   w='10rem'    />
       </Flex>
 
         <Flex justifyContent='center' mt='4rem'>
@@ -59,34 +59,44 @@ function App() {
             color='white'
             >We are taking the power from the employer  and  <Box display={['none','none', 'block']} as='br'/> putting it in your hands.</Text>
 
-            <Flex py='3rem' flex='1' flexDir={['column','column','row']}
+            <Flex py='3rem' flex='1' flexDir={['row']}
               alignItems={['center']}
               justifyContent='center'
               px={['0','10','0']}
               >
               <Flex mx={['.4rem']}  
-              width={['100%','100%','40%']}
+              width={['80%  ','60%  ','60%  ','35%']}
+              //'100%','100%',
               justifyContent='center'
               as='flex'
               
               >
 
             <Input placeholder="email address"
-                    p={['1.4rem','2rem']}
-                    width={['90%', '90%', '100%']}
+                   px={['2rem']}
+                   py={['2.2rem']}
+                    // 90%', '90%',
+                    width={[ '100%']}
+                    borderRadius='15px'
                    
         bg='white'
         color='black'
         
         />
         </Flex>
-        <Flex mx='.4rem' width={['100%', '100%', '25%']} my={2}
+        <Flex mx='.4rem' width={[ '45%', '45%','25%']} my={2}
+        //'100%', '100%',
         justifyContent='center'>
         <Button bg="primary.900"
-        p={['1.4rem','2rem']}
-        width={['90%', '90%', '100%']}
+        px={['2rem']}
+        py={['2.2rem']}
+
+        width={[ '100%']}
+        //'90%', '90%',
         color='white'
         fontWeight='500'
+        borderRadius='15px'
+
         _hover={{
           color: 'primary.900',
           bg: 'white'
