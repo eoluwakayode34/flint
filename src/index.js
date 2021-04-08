@@ -80,7 +80,17 @@ const theme = extendTheme({ colors
  , fonts:{
    heading: 'Airbnb Cereal App Bold',
    body: 'Airbnb Cereal App Book'
- }
+ },
+ styles: {
+  global: {
+    
+    "html, body": {
+      fontSize: "sm",
+      backgroundColor: "#0FDBA8"
+    },
+   
+  },
+},
   })
 
 
