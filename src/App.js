@@ -30,7 +30,7 @@ function App() {
         <Flex justifyContent='center' mt='4rem'>
           <Flex pos='relative' alignItems='center' flexDir='column'>
             
-        <Heading fontSize={["2rem","3rem","4rem"]} textAlign='center' font-weight='700' lineHeight='1' color='white' letterSpacing='1px'>Lifting the veil, <br/>         for everyone
+        <Heading fontSize={["2.5rem","3rem","4rem"]} textAlign='center' font-weight='700' lineHeight='1' color='white' letterSpacing='1px'>Lifting the veil, <br/>         for everyone
 </Heading>
 
           <TwinkleStar
@@ -49,7 +49,7 @@ function App() {
           
         </Flex>
             <Text textAlign='center' 
-            fontSize={["1rem","1.5rem","2rem"]} 
+            fontSize={["1.3rem","1.5rem","2rem"]} 
             padding={["1rem","1.5rem","2rem"]} 
             px={['5','10','0']}
 
@@ -74,8 +74,8 @@ function App() {
 
             <Input placeholder="email address"
                      px={['1.8rem','1.9rem','2rem','2rem']}
-                     py={[  '2rem', '2.1rem','2.2rem','2.2rem']}
-                     
+                     py={[  '1.6rem', '2.1rem','2.2rem','2.2rem']}
+
                     // 90%', '90%',
                     width={[ '100%']}
                     borderRadius='15px'
@@ -90,7 +90,7 @@ function App() {
         justifyContent='center'>
         <Button bg="primary.900"
         px={['1.8rem','1.9rem','2rem','2rem']}
-        py={[  '2rem', '2.1rem','2.2rem','2.2rem']}
+        py={[  '1.6rem', '2.1rem','2.2rem','2.2rem']}
 
         width={[ '100%']}
         //'90%', '90%',
