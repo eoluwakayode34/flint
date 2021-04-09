@@ -128,7 +128,8 @@ function App() {
     
     
 >
-        <MotionBox   >
+        <MotionBox     w='100%'
+  >
           <Image src={footer} />
         </MotionBox>
         {/* <MotionBox>
