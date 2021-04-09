@@ -14,7 +14,6 @@ import star from './asset/images/star.svg'
 import footer from './asset/images/footer.svg'
 
 
-const MotionBox = motion(Box)
 const MotionFlex = motion(Flex)
 const TwinkleStar = motion(Image)
 
@@ -131,7 +130,8 @@ function App() {
     
 >
   
-          <Image src={footer} w='100%'  margin={0}/>
+          <Image src={footer} w='100%' pos='absolute'
+    bottom='0'  margin={0}/>
         {/* <MotionBox>
         <Image src={box2} />
         </MotionBox>
