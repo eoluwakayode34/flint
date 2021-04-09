@@ -23,8 +23,8 @@ function App() {
 
  
   return (
-    <Box>
-    <Box bg='brand.900' w={['100vw']} h={['100%','100%']} >
+    <Box >
+    <Box bg='brand.900' w={['100vw']} h={['100vh','100%']} >
       <Flex justifyContent='center' pt={['35px']} flex='1'>
         <Image src={logo}  margin={0}   w={['9rem','9.4rem','9.8rem','10.1rem']}    />
       </Flex>
@@ -33,7 +33,7 @@ function App() {
           <Flex pos='relative' alignItems='center' mt={['3rem','4rem','5rem','6rem','7rem']} flexDir='column'>
             
         <Heading fontSize={["2.5rem","3rem","3.5rem"]}  fontStyle='normal'
-        px={['2rem','4rem','8rem','16rem','30rem']}
+        px={['1rem','2rem','4rem','8rem','16rem','30rem']}
  textAlign='center' font-weight='bold' lineHeight={['3.2rem','3.2rem','4.2rem','4.2rem']} color='white' letterSpacing='1'>We are lifting the veil, for everyone
 </Heading>
 
@@ -54,7 +54,7 @@ function App() {
         </Flex>
             <Text textAlign='center' 
             fontSize={['.9rem','1.1rem','1.28rem']}
-            px={['2rem','5rem', '5rem','20rem']}
+            px={['1rem','2rem','5rem', '5rem','20rem']}
 
             letterSpacing='1.2'
               lineHeight ={['1.7rem','1.9rem','2.1rem','2.3rem']}
@@ -77,7 +77,7 @@ function App() {
 
             <Input placeholder="email address"
                      px={['1.1rem','1.3rem','1.6rem','2.2rem']}
-                     py={['1.5rem','1.7rem','1.9rem','2.2rem']}
+                     py={['1.7rem','1.9rem','2rem','2.2rem']}
 
                     //  py={[  '1.6rem', '2.1rem','2.2rem','2.2rem']}
 
@@ -97,7 +97,7 @@ function App() {
         // px={['1.8rem','1.9rem','2rem','2rem']}
         // py={[  '1.6rem', '2.1rem','2.2rem','2.2rem']}
         px={['1.1rem','1.3rem','1.6rem','2.2rem']}
-        py={['1.5rem','1.7rem','1.9rem','2.2rem']}
+        py={['1.7rem','1.9rem','2rem','2.2rem']}
 
         width={[ '100%']}
         //'90%', '90%',
@@ -122,14 +122,16 @@ function App() {
     justifyContent='center'
     w='100%'
     h='11.45rem'
+    pos='absolute'
+    bottom='0'
 
-    mt={['6rem','6rem','7rem','7rem','auto','auto']}
     
     
     
     
 >
         <MotionBox     w='100%'
+        marginTop='0'
   >
           <Image src={footer} />
         </MotionBox>
