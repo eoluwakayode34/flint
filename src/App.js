@@ -83,7 +83,7 @@ function App() {
 
                     // 90%', '90%',
                     width={[ '100%']}
-                    borderRadius='15px'
+                    borderRadius='10px'
                    
         bg='white'
         color='black'
@@ -103,7 +103,8 @@ function App() {
         //'90%', '90%',
         color='white'
         fontWeight='500'
-        borderRadius='15px'
+        borderRadius='10px'
+
 
         _hover={{
           color: 'primary.900',
