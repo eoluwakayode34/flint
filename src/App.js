@@ -130,11 +130,8 @@ function App() {
     
     
 >
-        <MotionBox     w='100%'
-        marginTop='0'
-  >
-          <Image src={footer} />
-        </MotionBox>
+  
+          <Image src={footer} w='100%'  margin={0}/>
         {/* <MotionBox>
         <Image src={box2} />
         </MotionBox>
