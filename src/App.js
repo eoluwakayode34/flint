@@ -23,16 +23,17 @@ function App() {
  
   return (
     <Box >
-    <Box bg='brand.900' w={['100vw']} h={['100vh','100%']} >
+    <Box bg='brand.900' maxW='960PX'  mx='auto'     h={['100vh','100%']} >
       <Flex justifyContent='center' pt={['35px']} flex='1'>
         <Image src={logo}  margin={0}   w={['9rem','9.4rem','9.8rem','10.1rem']}    />
       </Flex>
 
         <Flex justifyContent='center' >
-          <Flex pos='relative' alignItems='center' mt={['3rem','4rem','5rem','6rem','7rem']} flexDir='column'>
+          <Flex pos='relative' flex='1'       
+ alignItems='center' mt={['3rem','4rem','5rem','6rem','7rem']} flexDir='column'>
             
-        <Heading fontSize={["2.5rem","3rem","3.5rem"]}  fontStyle='normal'
-        px={['1rem','2rem','4rem','8rem','16rem','30rem']}
+        <Heading fontSize={["2.44rem","2.7rem","3.1rem","3.3rem","3.5rem"]}  fontStyle='normal'
+        px={['1.3rem','4rem','12rem','15rem','16rem']}
  textAlign='center' font-weight='bold' lineHeight={['3.2rem','3.2rem','4.2rem','4.2rem']} color='white' letterSpacing='1'>We are lifting the veil, for everyone
 </Heading>
 
@@ -53,7 +54,7 @@ function App() {
         </Flex>
             <Text textAlign='center' 
             fontSize={['.9rem','1.1rem','1.28rem']}
-            px={['1rem','2rem','5rem', '5rem','20rem']}
+            px={['1.29rem','2rem','5rem', '9rem','6rem']}
 
             letterSpacing='1.2'
               lineHeight ={['1.7rem','1.9rem','2.1rem','2.3rem']}
@@ -67,7 +68,7 @@ function App() {
               px={[0,0,3,0]}
               >
               <Flex mx={['12px']}  
-              width={['90%  ','90%  ','60%  ','35%']}
+              width={['90%  ','90%  ','60%  ','45%']}
               //'100%','100%',
               justifyContent='center'
               as='flex'
@@ -89,7 +90,7 @@ function App() {
         
         />
         </Flex>
-        <Flex mx='12px' width={[ '90%','90%', '45%','20%']} my={2}
+        <Flex mx='12px' width={[ '90%','90%', '45%','25%']} my={2}
         //'100%', '100%',
         justifyContent='center'>
         <Button bg="#00251C"
